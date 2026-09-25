@@ -33,7 +33,7 @@
         <ol>
             <li>Mensagens enviadas em canais nos quais o bot está configurado para funcionar;</li>
             <li>ID do usuário do Discord, utilizado para manter o contexto temporário da conversa;</li>
-            <li>Informações necessárias para identificar o canal em que a mensagem foi enviada.</li>
+            <li>Informações do canal necessárias para verificar se o bot está configurado para funcionar naquele canal.</li>
         </ol>
 
         <p>
@@ -50,38 +50,50 @@
         </p>
 
         <p>
-            o bot pode utilizar a pergunta anterior para compreender a referência.
+            Por exemplo, se um usuário perguntar "Qual a fraqueza do Boss 1?" e posteriormente
+            perguntar "E qual a fraqueza dele?", o bot poderá utilizar a pergunta anterior
+            para compreender a referência.
         </p>
 
         <p>
-            Esse contexto é utilizado para melhorar a resposta e não deve ser considerado
-            um histórico permanente da conversa.
+            Esse contexto é mantido temporariamente na memória do bot enquanto ele estiver
+            em funcionamento e não constitui um histórico permanente da conversa.
         </p>
 
 
         <h3>3. Inteligência artificial</h3>
 
         <p>
-            As mensagens podem ser processadas pelo sistema de inteligência artificial utilizado
+            As mensagens podem ser processadas por modelos de inteligência artificial utilizados
             pelo Answer-Question para classificar perguntas e gerar respostas.
         </p>
 
         <p>
-            O bot foi projetado para utilizar modelos de inteligência artificial executados pelo
-            sistema responsável pelo serviço.
-        </p>
-
-
-        <h3>4. Armazenamento</h3>
-
-        <p>
-            As informações utilizadas para o contexto das conversas podem permanecer armazenadas
-            temporariamente enquanto o bot estiver em funcionamento.
+            Atualmente, os modelos de inteligência artificial utilizados pelo Answer-Question
+            são executados no ambiente em que o serviço está hospedado, por meio do Ollama.
         </p>
 
         <p>
-            Não pretendemos manter um histórico permanente das mensagens dos usuários apenas
-            para responder às perguntas.
+            O Answer-Question não utiliza as mensagens dos usuários para treinar modelos de
+            inteligência artificial.
+        </p>
+
+
+        <h3>4. Armazenamento e retenção</h3>
+
+        <p>
+            O contexto utilizado pelo Answer-Question é armazenado temporariamente na memória
+            do processo enquanto o bot estiver em funcionamento.
+        </p>
+
+        <p>
+            Atualmente, o Answer-Question não mantém um banco de dados ou histórico permanente
+            das mensagens dos usuários para responder às perguntas.
+        </p>
+
+        <p>
+            Quando o bot é encerrado ou reiniciado, o contexto temporário mantido em memória
+            é perdido.
         </p>
 
 
@@ -92,16 +104,32 @@
         </p>
 
         <p>
-            Informações não são compartilhadas com terceiros para fins de publicidade.
+            As informações processadas pelo bot não são compartilhadas com terceiros para fins
+            de publicidade.
         </p>
 
         <p>
             Caso seja necessário utilizar algum serviço externo para o funcionamento do bot no
-            futuro, esta Política poderá ser atualizada para explicar esse tratamento.
+            futuro, esta Política de Privacidade poderá ser atualizada para explicar como esse
+            serviço tratará as informações.
         </p>
 
 
-        <h3>6. Segurança</h3>
+        <h3>6. Serviços de terceiros</h3>
+
+        <p>
+            O Answer-Question funciona por meio da plataforma Discord. O Discord possui seus
+            próprios termos e política de privacidade, que se aplicam ao tratamento de dados
+            realizado pela própria plataforma.
+        </p>
+
+        <p>
+            O Answer-Question não controla o tratamento de informações realizado diretamente
+            pelo Discord.
+        </p>
+
+
+        <h3>7. Segurança</h3>
 
         <p>
             São adotadas medidas razoáveis para proteger as informações utilizadas pelo bot.
@@ -109,24 +137,34 @@
         </p>
 
 
-        <h3>7. Direitos e solicitações</h3>
+        <h3>8. Direitos e solicitações</h3>
 
         <p>
             Caso você tenha dúvidas sobre o tratamento de suas informações ou queira solicitar
-            esclarecimentos sobre seus dados, entre em contato com a equipe responsável pelo
-            Answer-Question através do servidor oficial.
+            esclarecimentos ou a exclusão de informações temporariamente associadas ao seu ID
+            do Discord, entre em contato com a equipe responsável pelo Answer-Question através
+            do servidor oficial.
+        </p>
+
+        <p>
+            Como o contexto das conversas é mantido apenas temporariamente na memória do bot,
+            ele normalmente deixa de existir quando o bot é reiniciado ou encerrado.
         </p>
 
 
-        <h3>8. Alterações nesta política</h3>
+        <h3>9. Alterações nesta política</h3>
 
         <p>
             Esta Política de Privacidade pode ser atualizada quando houver alterações no
-            funcionamento do Answer-Question ou na forma como informações são tratadas.
+            funcionamento do Answer-Question ou na forma como as informações são tratadas.
+        </p>
+
+        <p>
+            A versão mais recente estará disponível nesta página.
         </p>
 
 
-        <h3>9. Contato</h3>
+        <h3>10. Contato</h3>
 
         <p>
             Para questões relacionadas à privacidade, entre em contato com a equipe responsável
